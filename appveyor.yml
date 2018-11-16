@@ -1,4 +1,3 @@
-environment:
-  matrix:
-  # don't let this fool you, we still build to target java7
-  - JAVA_HOME: C:\Program Files\Java\jdk1.8.0
+build_script:
+  - set JAVA_HOMES=C:\Program Files\Java\jdk1.6.0\jre;C:\Program Files\Java\jdk1.7.0\jre;C:\Program Files\Java\jdk1.8.0\jre
+  - gradle build.gradle
